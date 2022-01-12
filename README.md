@@ -2,27 +2,34 @@
     <p> 🎥 CRUD de Vídeos </p>
 </h1>
 
+<p align="center">
+    <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Pedro-Manoel/node-crud-videos?style=flat-square">
+    <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Pedro-Manoel/node-crud-videos?style=flat-square">
+    <img alt="Repository size" src="https://img.shields.io/github/repo-size/Pedro-Manoel/node-crud-videos?style=flat-square">
+    <img alt="GitHub license" src="https://img.shields.io/github/license/Pedro-Manoel/node-crud-videos?style=flat-square"><br/>
+</p>
+
 ## 🔖 Sobre
 
-CRUD simples de vídeos desenvolvido com [Node.js](https://nodejs.org/en/t) para fins de aprendizagem. O banco de dados utilizado foi o [PostgreSQL](https://www.h2database.com/html/main.html).
+CRUD simples de vídeos desenvolvido com [Node.js](https://nodejs.org/en/) para fins de aprendizagem. O banco de dados utilizado foi o [PostgreSQL](https://www.postgresql.org/).
 
 ## 💥 Utilização
 
 - ### 👉 **Pré-requisitos**
 
-  - É **necessário** possuir o **[Node.js](https://www.oracle.com/java/technologies/downloads//)** instalado no computador
+  - É **necessário** possuir o **[Node.js](https://nodejs.org/en/)** instalado no computador
   - É **necessário** possuir um gerenciador de pacotes, como o **[Yarn](https://yarnpkg.com/)**, instalado no computador
 
 1. Faça o clone do repositório:
 
 	```sh
-	  $ git clone
+	  $ git clone https://github.com/Pedro-Manoel/node-crud-videos.git
 	```
 
 2. Entre na pasta do projeto:
 
 	```sh
-	  $ cd
+	  $ cd node-crud-videos
 	```
 
 3. Configure a conexão com o PostgreSQL no arquivo `.env`, atribuindo o devido valor as seguintes variáveis:
@@ -35,7 +42,7 @@ CRUD simples de vídeos desenvolvido com [Node.js](https://nodejs.org/en/t) para
         TYPEORM_PORT =
     ```
 
-4. Execute o seguinte comando para criar as tabelas no banco
+4. Execute o seguinte comando para criar as tabelas no banco:
 
     ```sh
     $ yarn typeorm migration:run
@@ -48,7 +55,7 @@ CRUD simples de vídeos desenvolvido com [Node.js](https://nodejs.org/en/t) para
     ```
 ## 🔰 Rotas da Aplicação
 
-Um demostrativo do funcionamento das rotas da API utilizando dados fictícios. As rotas são as seguintes:
+Um demostrativo do funcionamento das rotas da aplicação utilizando dados fictícios. As rotas são as seguintes:
 
 ### 🚏 `/categories`
 
@@ -247,7 +254,7 @@ Um demostrativo do funcionamento das rotas da API utilizando dados fictícios. A
             "description": "Uma pessoa caindo na lama e ficando com a cara toda suja",
             "duration": 25,
             "category_id": "fe32b49a-2e13-4188-bdc4-bef512013adc",
-            "create_at": "2022-01-12T15:03:51.594Z",
+            "create_at": "2022-01-12T15:03:51.594Z"
         }
         ```
 
