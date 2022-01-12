@@ -43,13 +43,19 @@ CRUD simples de vídeos desenvolvido com [Node.js](https://nodejs.org/en/) para 
         TYPEORM_PORT =
     ```
 
-4. Execute o seguinte comando para criar as tabelas no banco:
+4. Execute o seguinte comando para fazer o download das dependências da aplicação:
+
+    ```sh
+    $ yarn
+    ```
+
+5. Execute o seguinte comando para criar as tabelas no banco:
 
     ```sh
     $ yarn typeorm migration:run
     ```
 
-5. Execute o seguinte comando para executar a aplicação:
+6. Execute o seguinte comando para executar a aplicação:
 
     ```sh
     $ yarn dev
