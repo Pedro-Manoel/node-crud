@@ -24,6 +24,7 @@ export class CreateVideos1641906284934 implements MigrationInterface {
                     {
                         name: "category_id",
                         type: "uuid",
+                        isNullable: true
                     },
                     {
                         name: "duration",
@@ -40,7 +41,8 @@ export class CreateVideos1641906284934 implements MigrationInterface {
                         name: "fk_videos_category",
                         columnNames: ["category_id"],
                         referencedTableName: "categories",
-                        referencedColumnNames: ["id"]
+                        referencedColumnNames: ["id"],
+                        onDelete: "SET NULL"
                     }
                 ]
             })
@@ -50,5 +52,4 @@ export class CreateVideos1641906284934 implements MigrationInterface {
     public async down (queryRunner: QueryRunner): Promise<void> {
         await queryRunner.dropTable("videos");
     }
-
 }
